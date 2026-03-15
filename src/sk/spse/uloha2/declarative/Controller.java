@@ -1,21 +1,36 @@
 package sk.spse.uloha2.declarative;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
-/**
- * Controller pre FXML súbor – obsahuje logiku aplikácie
- */
 public class Controller {
 
-    private int counter = 0;
+    @FXML
+    private TextField name;
 
     @FXML
-    private TextField counterField;
+    private TextField password;
 
     @FXML
-    private void incrementCounter() {
-        counter++;
-        counterField.setText(String.valueOf(counter));
+    private ToggleGroup pohlavieGroup;
+
+    @FXML
+    private void userInput() {
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Registrácia používateľa");
+        alert.setHeaderText("Registrácia prebehla úspešne");
+
+        String pohlavie = ((RadioButton) pohlavieGroup.getSelectedToggle()).getText();
+
+        String message =
+                "Užívateľ " + name.getText() +
+                        " (" + pohlavie + ")" +
+                        " s heslom " + password.getText() +
+                        " bol pridaný do systému";
+
+        alert.setContentText(message);
+
+        alert.showAndWait();
     }
 }
