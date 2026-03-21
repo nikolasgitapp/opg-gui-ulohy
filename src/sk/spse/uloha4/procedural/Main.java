@@ -2,6 +2,6 @@ package sk.spse.uloha4.procedural;
 
 public class Main {
     public static void main(String[] args) {
-        Application.launch(Application.class, args);
+        ProceduralApplication.launch(ProceduralApplication.class, args);
     }
 }

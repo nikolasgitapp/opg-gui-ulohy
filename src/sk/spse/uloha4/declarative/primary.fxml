@@ -3,25 +3,97 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<HBox xmlns="http://javafx.com/javafx/21"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="sk.spse.uloha4.declarative.Controller"
-      alignment="CENTER"
-      spacing="20">
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <padding>
-        <Insets topRightBottomLeft="10" />
-    </padding>
-
-    <Label text="Počítadlo:" />
-
-    <TextField fx:id="counterField"
-               text="0"
-               editable="false"
-               style="-fx-padding: 10 20 10 20;" />
-
-    <Button text="Plus 1"
-            onAction="#incrementCounter" />
-</HBox>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha4.declarative.Controller">
+   <center>
+      <TilePane prefHeight="274.0" prefWidth="814.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vbox1" prefHeight="275.0" prefWidth="202.0" style="-fx-background-color: blue;">
+               <children>
+                  <ImageView fitHeight="229.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@soup2.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="vbox2" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: green;">
+               <children>
+                  <ImageView fitHeight="244.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@soup2.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="vbox3" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: yellow;">
+               <children>
+                  <ImageView fitHeight="202.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@soup2.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="vbox4" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: red;">
+               <children>
+                  <ImageView fitHeight="236.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@soup2.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </TilePane>
+   </center>
+   <bottom>
+      <HBox prefHeight="74.0" prefWidth="814.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="&quot;In the future, everyone will be world-famous for 15 minutes&quot; - Andry Warhol" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onMousePressed="#randomize" text="Randomize">
+               <HBox.margin>
+                  <Insets left="100.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button alignment="BOTTOM_RIGHT" mnemonicParsing="false" onMousePressed="#close" prefHeight="31.0" prefWidth="58.0" text="Close">
+               <HBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
