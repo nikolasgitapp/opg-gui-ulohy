@@ -1,0 +1,23 @@
+.text-field {
+    -fx-text-fill: #930b1e;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.8;
+}
+.label {
+    -fx-text-fill: #930b1e;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.8;
+}
+#vboxstyle1 {
+    -fx-background-image: url(calculator.jpeg);
+    -fx-background-size: 100%;
+}
+.text-field:focused {
+    -fx-text-fill: #930b1e;
+    -fx-border-color: black;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.8;
+}

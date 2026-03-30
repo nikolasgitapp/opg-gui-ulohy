@@ -1,0 +1,24 @@
+.label {
+    -fx-text-fill: green;
+    -fx-font-family: Serif;
+}
+.radio-button {
+    -fx-text-fill: blue;
+    -fx-font-family: Serif;
+}
+.button {
+    -fx-text-fill: red;
+    -fx-font-family: Serif;
+    -fx-border-radius: 27px;
+    -fx-background-radius: 27px;
+}
+#textfield1 {
+    -fx-border-radius: 17px;
+    -fx-border-color: green;
+    -fx-background-radius: 17px;
+}
+#passwordfield1 {
+    -fx-border-radius: 17px;
+    -fx-border-color: red;
+    -fx-background-radius: 17px;
+}
