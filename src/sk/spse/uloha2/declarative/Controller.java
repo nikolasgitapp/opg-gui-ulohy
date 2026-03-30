@@ -1,5 +1,6 @@
 package sk.spse.uloha2.declarative;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -32,5 +33,10 @@ public class Controller {
         alert.setContentText(message);
 
         alert.showAndWait();
+    }
+
+    @FXML
+    private void exit() {
+        Platform.exit();
     }
 }
