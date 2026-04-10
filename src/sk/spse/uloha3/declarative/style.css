@@ -1,0 +1,57 @@
+#borderpane1 {
+    -fx-background-image: url(ele-wallpaper2.jpeg);
+    -fx-background-size: 100%;
+}
+.label {
+    -fx-effect:dropshadow(gaussian, #dee1ea, 20, 0.9, 0, 0);
+    -fx-font-weight: bold;
+    -fx-text-fill: #b80101;
+}
+.hyperlink {
+    -fx-effect:dropshadow(gaussian, #dee1ea, 20, 0.9, 0, 0);
+    -fx-font-weight: bold;
+}
+.text-area {
+    -fx-font-family: Serif;
+    -fx-background-color: #FFFA;
+    -fx-font-size: 20px;
+}
+.text-area.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+}
+#image {
+    -fx-rotate: -20;
+    -fx-scale-x: 100%;
+    -fx-scale-y: 100%;
+    transition: all 0.5s ease-in-out;
+}
+#image:hover {
+    -fx-rotate: 0;
+    -fx-scale-x: 100%;
+    -fx-scale-y: 100%;
+    transition: all 0.75s ease-in-out;
+}
+#image:pressed {
+    -fx-scale-x: 250%;
+    -fx-scale-y: 250%;
+    transition: all 0.75s ease-in-out;
+}
+.text-area {
+    -fx-font-family: Serif;
+    -fx-background-color: #FFFA;
+}
+.text-area scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.button{
+    -fx-border-color: black;
+    -fx-text-fill: black;
+    -fx-background-color:#FFFA;
+}
